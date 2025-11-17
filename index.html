@@ -15,22 +15,50 @@
 
     <body>
 
-        <form id="form">
+        <!-- <form id="form"> -->
+        <form id="form" novalidate>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+            <p>
+                <label>
+                    <span>*Email:</span>
+                    <input id="email" name="email" type="email" required>
+                    <span id="email-error" class="error" aria-live="polite"></span>
+                </label>
+            </p>
+            
+            <p>
+                <label for="country">
+                    <span>*Country:</span>
+                    <input id="country" name="country" type="text" required>
+                    <span id="country-error" class="error" aria-live="polite"></span>
+                </label><br>
+            </p>
+            
+            <p>
+                <label for="zip">
+                    <span>*Postal Code:</span>
+                    <input id="zip" name="zip" type="text" required>
+                    <span id="zip-error" class="error" aria-live="polite"></span>
+                </label>
+            </p>
 
-            <label for="country">Country:</label><br>
-            <input type="text" id="country" name="country"><br><br>
+            <p>
+                <label for="password1">
+                    <span>*Password:</span>
+                    <input id="password1" name="password1" type="text" required>
+                    <span id="password1-error" class="error" aria-live="polite"></span>
+                </label>
+            </p>
 
-            <label for="postal-code">Postal Code:</label><br>
-            <input type="text" id="postal-code" name="postal-code"><br><br>
+            <p>
+                <label for="password2">
+                    <span>*Confirm Password:</span>
+                    <input id="password2" name="password2" type="text" required>
+                    <span id="password2-error" class="error" aria-live="polite"></span>
+                </label>
+            </p>
 
-            <label for="password1">Password:</label><br>
-            <input type="text" id="password1" name="password1"><br><br>
-
-            <label for="password2">Confirm Password:</label><br>
-            <input type="text" id="password2" name="password2"><br><br>
+            <button id="submit">Submit</button>
 
         </form>
 

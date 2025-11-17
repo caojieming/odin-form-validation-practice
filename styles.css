@@ -1,7 +1,40 @@
-input:invalid {
-    border: 2px solid red;
+/* * {
+    outline: 1px solid blue;
+} */
+
+p {
+    width: 200px;
+}
+p * {
+    display: block;
 }
 
-input:valid {
-    border: 2px solid green;
+label {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+input:invalid, .mismatch {
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: red;
+    border-radius: 0 0 5px 5px;
+
+    box-sizing: border-box;
+}
+
+/* active class is for error messages, and just adds some padding */
+.active {
+    padding: 4px;
 }
